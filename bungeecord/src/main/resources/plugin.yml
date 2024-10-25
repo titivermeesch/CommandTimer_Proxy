@@ -1,0 +1,4 @@
+name: CommandTimerBungeecord
+main: me.playbosswar.commandtimerbungeecord.CommandTimerBungeecord
+version: "1.0"
+author: PlayBossWar
