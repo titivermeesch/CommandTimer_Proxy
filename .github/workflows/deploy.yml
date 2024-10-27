@@ -47,7 +47,7 @@ jobs:
         with:
           path: artifact
           merge-multiple: true
-      - run: echo "PLUGIN_VERSION=$(grep version.yml)" >> $GITHUB_ENV
+      - run: echo "PLUGIN_VERSION=$(grep ^ version.yml)" >> $GITHUB_ENV
       - run: gh release create ${{ env.PLUGIN_VERSION }} -t ${{ env.PLUGIN_VERSION }} artifact/*.jar
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
