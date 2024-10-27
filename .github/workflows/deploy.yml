@@ -19,7 +19,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: commandtimer-bungeecord
-          path: build/libs/bungeecord.jar
+          path: bungeecord/build/libs/bungeecord.jar
   Build-Velocity:
     runs-on: ubuntu-latest
     permissions:
@@ -35,7 +35,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: commandtimer-velocity
-          path: build/libs/velocity.jar
+          path: velocity/build/libs/velocity.jar
   Release:
     needs:
       - Build-Bungeecord
